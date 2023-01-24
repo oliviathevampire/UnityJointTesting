@@ -13,8 +13,8 @@ public class Movement : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKey(KeyCode.A))
-            _rb.velocity = Vector2.left * speed * Time.deltaTime;
+            _rb.velocity = Vector2.left * (speed * Time.deltaTime);
         if (Input.GetKey(KeyCode.D))
-            _rb.velocity = Vector2.right * speed * Time.deltaTime;
+            _rb.velocity = Vector2.right * (speed * Time.deltaTime);
     }
 }
